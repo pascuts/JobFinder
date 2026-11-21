@@ -1,0 +1,88 @@
+pyarmor gen -O dist_obf --include "*.py" .
+
+
+pyinstaller --onefile --noconsole --paths dist_obf --add-data "dist_obf/pyarmor_runtime_000000;pyarmor_runtime_000000" --collect-all PySide6 --collect-all openpyxl --collect-all playwright --collect-all playwright_stealth --collect-all pypdf --collect-all google --hidden-import ui_panel --hidden-import automation_worker --hidden-import base_assistant --hidden-import config_manager --hidden-import linkedin_bot --hidden-import job_extractor --hidden-import ai_assistant --hidden-import gemini_assistant --hidden-import excel_tracker dist_obf/JobSeachPy.py
+
+pip install PySide6-Essentials openpyxl playwright playwright-stealth pypdf google-generativeai python-dotenv pyinstaller pyarmor
+
+pyinstaller --onefile --noconsole ^
+  --paths dist_obf ^
+  --add-data "dist_obf/pyarmor_runtime_000000;pyarmor_runtime_000000" ^
+  --collect-submodules PySide6.QtWidgets ^
+  --collect-submodules PySide6.QtCore ^
+  --collect-submodules PySide6.QtGui ^
+  --collect-all openpyxl ^
+  --collect-all playwright ^
+  --collect-all playwright_stealth ^
+  --collect-all pypdf ^
+  --collect-all google ^
+  --exclude-module PySide6.Qt3D ^
+  --exclude-module PySide6.QtSensors ^
+  --exclude-module PySide6.QtQuick ^
+  --exclude-module PySide6.QtQml ^
+  --exclude-module PySide6.QtWebEngineCore ^
+  --exclude-module PySide6.QtWebEngineWidgets ^
+  --exclude-module matplotlib ^
+  --exclude-module numpy ^
+  --exclude-module PySide6.QtSql ^
+  --exclude-module PySide6.QtTest ^
+  --exclude-module pandas ^
+  --hidden-import ui_panel ^
+  --hidden-import automation_worker ^
+  --hidden-import base_assistant ^
+  --hidden-import config_manager ^
+  --hidden-import linkedin_bot ^
+  --hidden-import job_extractor ^
+  --hidden-import ai_assistant ^
+  --hidden-import gemini_assistant ^
+  --hidden-import excel_tracker ^
+  --upx-dir=. ^
+  dist_obf/JobSeachPy.py
+  
+  
+pyinstaller --onefile --noconsole ^
+  --paths dist_obf ^
+  --add-data "dist_obf/pyarmor_runtime_000000;pyarmor_runtime_000000" ^
+  --collect-submodules PySide6.QtWidgets ^
+  --collect-submodules PySide6.QtCore ^
+  --collect-submodules PySide6.QtGui ^
+  --collect-submodules playwright ^
+  --collect-all google ^
+  --collect-all playwright_stealth ^
+  --hidden-import openpyxl ^
+  --hidden-import pypdf ^
+  --exclude-module PySide6.Qt3D ^
+  --exclude-module PySide6.QtSensors ^
+  --exclude-module PySide6.QtQuick ^
+  --exclude-module PySide6.QtQml ^
+  --exclude-module PySide6.QtWebEngineCore ^
+  --exclude-module PySide6.QtWebEngineWidgets ^
+  --exclude-module PySide6.QtSql ^
+  --exclude-module PySide6.QtTest ^
+  --exclude-module PySide6.QtNetwork ^
+  --exclude-module PySide6.QtSvg ^
+  --exclude-module PySide6.QtOpenGL ^
+  --exclude-module PySide6.QtMultimedia ^
+  --exclude-module PySide6.QtWebEngineCore ^
+  --exclude-module PySide6.Qt3DCore ^
+  --exclude-module PySide6.QtVirtualKeyboard ^
+  --exclude-module matplotlib ^
+  --exclude-module numpy ^
+  --exclude-module pandas ^
+  --exclude-module tkinter ^
+  --exclude-module unittest ^
+  --exclude-module PIL ^
+  --exclude-module scipy ^
+  --exclude-module IPython ^
+  --hidden-import ui_panel ^
+  --hidden-import automation_worker ^
+  --hidden-import base_assistant ^
+  --hidden-import config_manager ^
+  --hidden-import linkedin_bot ^
+  --hidden-import job_extractor ^
+  --hidden-import ai_assistant ^
+  --hidden-import gemini_assistant ^
+  --hidden-import excel_tracker ^
+  --upx-dir "C:\Users\Fujitsu\Downloads\upx-5.2.0-win64" ^
+  --upx-exclude=vcruntime140.dll ^
+   dist_obf/JobSeachPy.py

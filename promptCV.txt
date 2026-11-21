@@ -1,0 +1,13 @@
+Strictly output XML only. No markdown formatting, no code blocks, no conversational text.
+Generate tailored CV changes for the specified job using my Master CV, MasterCV.xml, and LinkedIn profile, LinkedInPublicProfile.xml, both being the single source of truth, 
+and the attached CV template file, that must be improved to pass ATS and recruiter reviews. 
+Apply the evaluation rules and structure the response following EXACTLY the response schema 
+provided in the attached configuration.  All changes must be 100% truthful facts about me.
+==================
+Job ID: {job_id}
+Job Title: {job_title}
+Selected CV Template Number: {cvtmpl_no}
+--- JOB DESCRIPTION ---
+{description}
+==================
+Begin now. Output RAW XML only.

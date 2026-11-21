@@ -1,0 +1,7 @@
+=  IFERROR(VLOOKUP(A3, $Sheet2.A2:E235, 4, 0), D3)
+
+=IFERROR(INT(MID(O3, SEARCH("<CompatibilityScore>", O3) + 20, SEARCH("</CompatibilityScore>", O3) - SEARCH("<CompatibilityScore>", O3) - 20)), -1000)
+
+=LEFT(O3, SEARCH("<scoreAudit>", O3) - 1) & MID(O3, SEARCH("</scoreAudit>", O3) + 13, LEN(O3))
+
+=IFERROR(INT(MID(O370, SEARCH("<CompatibilityScore>", O370) + 20, SEARCH("</CompatibilityScore>", O370) - SEARCH("<CompatibilityScore>", O370) - 20)), -1000)

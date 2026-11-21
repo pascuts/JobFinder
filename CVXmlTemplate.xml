@@ -1,0 +1,68 @@
+<CVTemplates>
+  <TotalCount></TotalCount>
+  <CVTemplate>
+    <Title></Title>
+    <CountNo></CountNo>
+    <PersonalInformation>
+      <Name></Name>
+      <Phone></Phone>
+      <Email></Email>
+      <Location></Location>
+      <Nationality></Nationality>
+      <Languages>
+        <Language proficiency=""></Language>
+      </Languages>
+    </PersonalInformation>
+    <Education>
+      <Degree institution="">
+        <Title></Title>
+        <Details></Details>
+      </Degree>
+      <Degree institution="">
+        <Title></Title>
+        <Details></Details>
+      </Degree>
+      <Degree institution="">
+        <Title></Title>
+        <Details></Details>
+      </Degree>
+      <Recognition institution="">
+        <Title></Title>
+        <Details></Details>
+      </Recognition>
+    </Education>
+    <Certifications>
+      <Cert></Cert>
+    </Certifications>
+    <EmploymentHistory>
+      <Job employer="">
+        <Role></Role>
+        <Period></Period>
+        <Location></Location>
+        <ProjectsAndResponsibilities>
+          <Project name="">
+            <Detail></Detail>
+          </Project>
+          <TrainingAndInternalContributions>
+            <Detail></Detail>
+          </TrainingAndInternalContributions>
+        </ProjectsAndResponsibilities>
+        <Position subRole="" period="">
+          <Detail></Detail>
+        </Position>
+        <Project name="">
+          <Detail></Detail>
+        </Project>
+        <Details>
+          <Detail></Detail>
+        </Details>
+      </Job>
+    </EmploymentHistory>
+    <TechnicalSkills>
+      <Category name=""></Category>
+    </TechnicalSkills>
+    <HobbiesAndInterests>
+      <Hobby></Hobby>
+    </HobbiesAndInterests>
+  </CVTemplate>
+</CVTemplates>

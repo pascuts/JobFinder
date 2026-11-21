@@ -1,0 +1,15 @@
+Strictly output XML only. No markdown formatting, no code blocks, no conversational text.
+
+Evaluate the job against my Master CV, MasterCV.xml, and LinkedIn profile, LinkedInPublicProfile.xml.
+Apply the evaluation rules in ascending numerical order as specified in the configuration. 
+Produce and return one JobResult following EXACTLY the response schema provided in the attached configuration.
+===========================================================
+INPUT JOB DETAILS
+===========================================================
+LinkedIn Job ID: {job_id}
+Job Title: {job_title}
+Company: {company}
+LinkedIn Qualification Match Status: {linkedin_match_status}
+Job Description: {description}
+
+Begin now. Output RAW XML only.

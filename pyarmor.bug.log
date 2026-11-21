@@ -1,0 +1,12 @@
+[BUG]: no found input "*.py"
+
+## Command Line
+C:\Users\Fujitsu\AppData\Local\Python\pythoncore-3.14-64\Scripts\pyarmor gen -O dist_obf -r *.py
+
+## Environments
+Python 3.14.3
+Pyarmor 9.2.6 (trial), 000000, non-profits
+Platform windows.x86_64
+Native windows.amd64
+Home C:\Users\Fujitsu\.pyarmor
+

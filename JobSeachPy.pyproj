@@ -1,0 +1,56 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>07163510-d319-4836-abba-c86a3c382bf5</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>JobSeachPy.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>JobSeachPy</Name>
+    <RootNamespace>JobSeachPy</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ai_assistant.py" />
+    <Compile Include="automation_worker.py" />
+    <Compile Include="base_assistant.py" />
+    <Compile Include="bkup_panel.py" />
+    <Compile Include="config_manager.py" />
+    <Compile Include="db_search_panel.py" />
+    <Compile Include="db_tracker.py" />
+    <Compile Include="excel_tracker.py" />
+    <Compile Include="gemini_assistant.py" />
+    <Compile Include="groq_assistant.py" />
+    <Compile Include="JobSeachPy.py" />
+    <Compile Include="job_extractor.py" />
+    <Compile Include="linkedin_bot.py" />
+    <Compile Include="log_search.py" />
+    <Compile Include="searches_panel.py" />
+    <Compile Include="ui_panel.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.txt" />
+    <Content Include="prompt.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
