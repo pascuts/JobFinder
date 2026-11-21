@@ -1,0 +1,20 @@
+{
+  "location": {
+    "area": [
+      "UK",
+      "London"
+    ],
+    "__CLASS__": "Adzuna::API::Response::Location",
+    "display_name": "London, UK"
+  },
+  "__CLASS__": "Adzuna::API::Response::SalaryHistogram",
+  "histogram": {
+    "70000": 181,
+    "40000": 16,
+    "30000": 9,
+    "20000": 1,
+    "50000": 27,
+    "60000": 35,
+    "10000": 1
+  }
+}

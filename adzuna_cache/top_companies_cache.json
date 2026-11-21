@@ -1,0 +1,30 @@
+{
+  "leaderboard": [
+    {
+      "__CLASS__": "Adzuna::API::Response::Company",
+      "canonical_name": "DPD",
+      "count": 8
+    },
+    {
+      "canonical_name": "PHS Group",
+      "__CLASS__": "Adzuna::API::Response::Company",
+      "count": 2
+    },
+    {
+      "canonical_name": "Hermes",
+      "__CLASS__": "Adzuna::API::Response::Company",
+      "count": 1
+    },
+    {
+      "canonical_name": "John Sisk and Son",
+      "__CLASS__": "Adzuna::API::Response::Company",
+      "count": 1
+    },
+    {
+      "count": 1,
+      "canonical_name": "blueprint",
+      "__CLASS__": "Adzuna::API::Response::Company"
+    }
+  ],
+  "__CLASS__": "Adzuna::API::Response::TopCompanies"
+}
